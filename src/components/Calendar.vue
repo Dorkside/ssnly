@@ -3,8 +3,13 @@
 </template>
 
 <script>
+import { produce } from "../database";
+
 export default {
-  name: "Calendar"
+  name: "Calendar",
+  async mounted() {
+    console.log(await produce);
+  },
 };
 </script>
 
